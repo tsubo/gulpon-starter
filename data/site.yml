@@ -1,0 +1,11 @@
+site:
+  name: Gulpon
+  meta:
+    description: A Flexible Static Site Generator
+    keywords: Static Site,Generatior,node,gulp,nunjucks,markdown,template,bootstrap,vue
+production:
+  site:
+    url: https://your.site.com
+development:
+  site:
+    url: http://localhost:3000

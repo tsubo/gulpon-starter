@@ -1,0 +1,10 @@
+{
+  "name": "gulpon-starter",
+  "version": "1.0.0",
+  "description": "starter files for gulpon",
+  "author": "tsubo",
+  "license": "MIT",
+  "dependencies": {
+    "gulpon": "^1.0.0"
+  }
+}

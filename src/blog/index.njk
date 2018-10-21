@@ -1,0 +1,21 @@
+{% extends 'page.njk' %}
+
+{% set 'title' = 'Blog' %}
+{% set 'description' = 'An Example of Posts Plugin' %}
+
+{% block content %}
+  <div id="app">
+    <json-posts-index
+      api-url="{{ site.url }}/collections/blog/index.json"
+      page-path="./page">
+    </json-posts-index>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    var app = new Vue({
+      el: '#app',
+    })
+  </script>
+{% endblock %}

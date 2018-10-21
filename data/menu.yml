@@ -1,0 +1,8 @@
+menu:
+  left: [
+    { type: link, path: /, label: Home }
+    { type: link, path: /hello.html, label: Hello }
+  ]
+  right: [
+    { type: link, path: /blog, label: Blog }
+  ]

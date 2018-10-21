@@ -1,0 +1,28 @@
+{% extends 'base.njk' %}
+
+{% block content %}
+  <div id="app">
+    <json-posts-show v-bind:url="apiUrl"></json-posts-show>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        baseUrl: '{{ site.url }}/collections/blog',
+        slug: ''
+      },
+      created() {
+        let urlParams = new URLSearchParams(window.location.search)
+        this.slug = urlParams.get('slug')
+      },
+      computed: {
+        apiUrl() {
+          return `${this.baseUrl}/${this.slug}.json`
+        }
+      }
+    })
+  </script>
+{% endblock %}
