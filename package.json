@@ -6,5 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "gulpon": "^1.0.0"
+  },
+  "scripts": {
+    "build": "npx gulp build",
+    "serve": "npx gulp serve",
+    "clean": "npx gulp clean"
   }
 }
